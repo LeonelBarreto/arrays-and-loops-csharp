@@ -10,24 +10,19 @@ class Program
         int numero = int.Parse(Console.ReadLine());
 
 
-        int buscarNumero = 0;
+        int buscarIndice = -1;
 
         for(int i = 0; i < arrayNumeros.Length; i++)
         {
-            if (numero == arrayNumeros[i])
+            int buscarNumero = arrayNumeros[i];
+            if (buscarNumero == numero)
             {
-                buscarNumero = numero;
+                buscarIndice = i;
+                break;
             }
         }
 
-        if (buscarNumero == 0)
-        {
-            Console.Write(-1);
-        }
-        else
-        {
-            Console.Write(buscarNumero);
-        }
+        Console.Write(buscarIndice);
     }
 }
 
