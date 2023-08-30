@@ -20,7 +20,7 @@ class Program
 
         foreach (var numero in numeros)
         {
-            if ( numero > maiorNumero)
+            if (numero > maiorNumero)
             {
                 maiorNumero = numero;
             }
